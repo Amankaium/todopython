@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/checkbox.css">
+  </head>
+  <body>
+    <section>
+      <div class="create_container">
+        <input
+          class="create_input"
+          type="text"
+          placeholder="Напишите сюда новую задачу"
+        />
+        <button class="create_button">Добавить</button>
+      </div>
+      <div class="todo_container">
+        <div class="todo_item">
+          <div class="todo_item_header">
+            <label class="checkbox_container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <h4>Купить молоко</h4>
+          </div>
+          <div class="todo_item_footer">
+            <p>17.11.2020 <span>17:22</span></p>
+            <div class="action_buttons">
+                <img src="./icons/unmarked.png" />
+                <img src="./icons/delete.png" />
+            </div>
+          </div>
+        </div>
+        <div class="todo_item marked">
+          <div class="todo_item_header">
+            <label class="checkbox_container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <h4>Купить молоко</h4>
+          </div>
+          <div class="todo_item_footer">
+            <p>17.11.2020 <span>17:22</span></p>
+            <div class="action_buttons">
+                <img src="./icons/marked.png" />
+                <img src="./icons/delete.png" />
+            </div>
+          </div>
+        </div>
+        <div class="todo_item done">
+          <div class="todo_item_header" s>
+            <label class="checkbox_container">
+                <input type="checkbox" checked/>
+                <span class="checkmark"></span>
+              </label>
+              <h4>Купить молоко</h4>
+          </div>
+          <div class="todo_item_footer">
+            <p>17.11.2020 <span>17:22</span></p>
+            <div class="action_buttons">
+                <img src="./icons/unmarked.png" />
+                <img src="./icons/delete.png" />
+            </div>
+          </div>
+        </div>
+        <div class="todo_item marked">
+            <div class="todo_item_header">
+              <label class="checkbox_container">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <h4>Купить молоко</h4>
+            </div>
+            <div class="todo_item_footer">
+              <p>17.11.2020 <span>17:22</span></p>
+              <div class="action_buttons">
+                  <img src="./icons/marked.png" />
+                  <img src="./icons/delete.png" />
+              </div>
+            </div>
+          </div>
+          <div class="todo_item">
+            <div class="todo_item_header">
+              <label class="checkbox_container">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <h4>Купить молоко</h4>
+            </div>
+            <div class="todo_item_footer">
+              <p>17.11.2020 <span>17:22</span></p>
+              <div class="action_buttons">
+                  <img src="./icons/unmarked.png" />
+                  <img src="./icons/delete.png" />
+              </div>
+            </div>
+          </div>
+          <div class="todo_item done">
+            <div class="todo_item_header">
+              <label class="checkbox_container">
+                <input type="checkbox" checked/>
+                <span class="checkmark"></span>
+              </label>
+              <h4>Купить молоко</h4>
+            </div>
+            <div class="todo_item_footer">
+              <p>17.11.2020 <span>17:22</span></p>
+              <div class="action_buttons">
+                  <img src="./icons/marked.png" />
+                  <img src="./icons/delete.png" />
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>
