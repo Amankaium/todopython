@@ -1,14 +1,45 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <!-- <link rel="stylesheet" href="./styles/index.css" /> -->
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" />
+    <!-- <link rel="stylesheet" href="./styles/checkbox.css"> -->
+    <link rel="stylesheet" href="{% static 'styles/checkbox.css' %}">
 </head>
 <body>
-    <h2>Это тестовая страница</h2>
-    <div>Версия 2</div>
-    {% for todo in todo_list %}
-        <h3>{{ todo.text }} - {{ todo.created_at }}</h3>
-    {% endfor %}
+    <section>
+        <div class="create_container">
+          <input
+            class="create_input"
+            type="text"
+            placeholder="Напишите сюда новую задачу"
+          />
+          <button class="create_button">Добавить</button>
+        </div>
+        <div class="todo_container">
+
+            {% for todo in todo_list %} 
+            <div class="todo_item">
+                <div class="todo_item_header">
+                    <label class="checkbox_container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>{{ todo.text }}</h4>
+                    </div>
+                    <div class="todo_item_footer">
+                    <p>{{ todo.created_at }}</p>
+                    <div class="action_buttons">
+                        <img src="{% static './icons/unmarked.png' %}" />
+                        <img src="{% static './icons/delete.png' %}" />
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+      </section>
 </html>
